@@ -44,13 +44,27 @@ body
 // common blocks
 
 .out
-	max-width: 2540px
-	min-width: 1280px
-	width: 100%
 	position: relative
 	margin: 0 auto
+	padding: 80px
 	background-color: #fff
+	text-align: center
 	+clr
+button
+	background-color: $green
+	padding: 5px 15px
+	color: #FFF
+	font-size: 18px
+	-webkit-border-radius: 4px
+	border-radius: 4px
+	&:hover
+		background-color: lighten($green, 10%)
+
+input
+	margin: 15px
+	height: 32px
+	padding: 0 10px
+	+g(#ccc, #f4f4f4)
 
 
 .layout
