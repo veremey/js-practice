@@ -1,14 +1,15 @@
 $(document).ready(function() {
-
-
-	var red = (function step (){
+	var plus = (function (){
 		var count = 0;
 		return function(){
+			var num = $('input').val();
+			count = num !==undefined ? num : count;
 			return ++count;
-		};
-	})();
+		}
+	}());
+
 	$('button').on('click', function(){
-		$('input').val(red);
+		$('input').val(plus);
 	});
 
 });
