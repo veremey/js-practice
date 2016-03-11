@@ -4,12 +4,14 @@ $(document).ready(function() {
 		var count = 0;
 		return function(){
 			var num = $('input').val();
-			count = num !==undefined ? num : count;
+			var count = num !==undefined ? num : count;
+			// var count = num // практически одно и тоже
 			return ++count;
 		}
 	}());
 // ^
-//скобки в конце для того, чтобы ВЫЗВАТЬ функцию сразу после того, как она инициализиррованна.
+//скобки в конце для того, чтобы ВЫЗВАТЬ функцию сразу после того, как она инициализированна.
+//получить значение пересенной и что-то дальше с ней делать
 // https://gist.github.com/roman01la/bee756ac395b809d6636
 	$('button').on('click', function(){
 		$('input').val(plus);
