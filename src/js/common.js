@@ -17,7 +17,7 @@ $(document).ready(function() {
 		$('input').val(plus);
 	});
 
-	function chears(name) {//name - это Аргумент
+	/*	function chears(name) {//name - это Аргумент
 		// return arguments;
 		return "yeap " + name;
 	}//<= Инструкция определения ф-ции
@@ -51,6 +51,36 @@ $(document).ready(function() {
 	};
 	anotherZamikanie();// вызываю ф-цию
 	// поскольку anotherZamikanie - это просто переменная
+	*/
+
+	// **
+	// конструкторы и прототипы
+
+	var Person, person, anotherPerson, AnotherPerson;
+
+	Person = function(name, age){
+		this.age = age;
+		this.name = name;
+	};
+	AnotherPerson = function(gender){
+		this.gender = gender;
+	};
+
+	Person.prototype.greet = function(){
+		console.log('Hello my friend ' +this.name + '!');
+	};
+
+	Person.prototype.hello = function(name){
+		console.log(name + ' how are you?\nAre you '+this.age+' old?');
+	};
+
+	person = new Person('Ser' ,25);
+	conon = new AnotherPerson('male');
+	console.log(person.age);
+	console.log(person.name);
+	person.greet();
+	person.hello('Red');
+	console.log(conon.gender);
 
 
 });
