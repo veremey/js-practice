@@ -71,7 +71,7 @@ $(document).ready(function() {
 	};
 
 	Person.prototype.hello = function(name){
-		console.log(name + ' how are you?\nAre you '+this.age+' old?');
+		console.log(name + ' how are you?\nAre you '+this.age+' years old?');
 	};
 
 	person = new Person('Ser' ,25);
@@ -81,6 +81,7 @@ $(document).ready(function() {
 	person.greet();
 	person.hello('Red');
 	console.log(conon.gender);
+
 
 
 });
