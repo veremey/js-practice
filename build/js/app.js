@@ -10,7 +10,7 @@ $(document).ready(function() {
 			// var count = num // практически одно и тоже
 			return ++count;
 		}
-	}());
+	})();
 // ^
 //скобки в конце для того, чтобы ВЫЗВАТЬ функцию сразу после того, как она инициализированна.
 //получить значение пересенной и что-то дальше с ней делать
@@ -55,9 +55,17 @@ $(document).ready(function() {
 	// поскольку anotherZamikanie - это просто переменная
 	*/
 
-	// **
+	// Function.prototype.bind = function(context) {
+	//    return function() {
+	//       return this.apply(context, arguments);
+	//    };
+	// }
+
+
+	// ***************************
 	// конструкторы и прототипы
 
+	/*
 	var Person, person, anotherPerson, AnotherPerson;
 
 	Person = function(name, age){
@@ -83,6 +91,11 @@ $(document).ready(function() {
 	person.greet();
 	person.hello('Red');
 	console.log(conon.gender);
+	*/
+
+
+
+
 
 
 
