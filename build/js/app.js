@@ -92,11 +92,32 @@ $(document).ready(function() {
 	person.hello('Red');
 	console.log(conon.gender);
 	*/
+/*
+	alert('Сообщение');
+
+	var answer = prompt('Вопрос?', '');// 2-й параметр шаблонный вариант ответа
+	alert(answer); // Вернет СТРОКУ string || null - если нажали "ОТМЕНА"
+
+	var agreed = confirm('Ok?');
+	alert(agreed); // boolean
+
+	alert(1 + '2'); //вернет СТРОКУ    12
+	alert(+'1' + +'2'); //вернет Число  3
+	*/
 
 
+	//***********
+	// && ||
 
+	/*alert(0 && 5); //0
+	alert(1 && 0); //0
+	alert(1 && 5); // возвращает значение false или то, что справа //5
+	alert(1 || 5); // возвращает значение true или то, что справа / 1
+	alert(0 || 5); // возвращает значение true или то, что справа/ 5
+	alert(1 || 0); // возвращает значение true или то, что справа/ 1
+	alert(0 || null || 1 || undefined); //возвр то, которое перрвое true //1
 
-
+	*/
 
 
 });
