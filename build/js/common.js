@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
 
 	var plus = (function (){
 		var count = 0;
@@ -17,11 +17,16 @@ $(document).ready(function() {
 		$('input').val(plus);
 	});
 
+
+	// FUNCTION DECLARATION
+
 	/*	function chears(name) {//name - это Аргумент
 		// return arguments;
 		return "yeap " + name;
 	}//<= Инструкция определения ф-ции
 	console.log(chears('Serekjkj'));
+
+	// FUNCTION EXPRESSION
 
 	var greeting = (function(v){
 	return "Hello "+ v;
@@ -59,6 +64,12 @@ $(document).ready(function() {
 	//    };
 	// }
 
+	/*
+		var fun = function f (n){return n > 1 ? n*f(n-1) : 1; };
+		var f = fun;
+		fun = null;
+		console.log(f(3)); // 6
+	*/
 
 	// ***************************
 	// конструкторы и прототипы
@@ -116,15 +127,4 @@ $(document).ready(function() {
 	alert(0 || null || 1 || undefined); //возвр то, которое перрвое true //1
 
 	*/
-
-
-});
-
-
-
-
-
-
-
-
 
