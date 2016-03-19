@@ -54,7 +54,7 @@
 		var m = 15;
 		console.log(zamikanie()());
 	};
-	anotherZamikanie();// вызываю ф-цию
+	anotherZamikanie();// вызываю ф-циюсщ
 	// поскольку anotherZamikanie - это просто переменная
 	*/
 
@@ -128,3 +128,39 @@
 
 	*/
 
+
+	//
+	//  OBJECT
+	//
+	//
+
+	var pers = {
+		name : "Vasja",
+		age : 40,
+		phone : 6566
+	}
+	for ( key in pers){
+		console.log(key);
+	} // Вернет ключи обьекта
+
+	for (key in pers){
+			//если ключи число то умножим его на 2
+		if (parseFloat(pers[key]) ? !NaN : NaN ) {
+			// и выведем в АЛЕРТ
+			alert(pers[key] *=2);
+		}
+	}
+
+	//
+	//
+	//  ARRAY
+	//
+	//
+
+
+	// var arr = [1, 2, 3, 4, 5];
+
+	// перебор обьектов в масиве.
+	// for (var i = arr.length - 1; i >= 0; i--) {
+	// 	alert(arr[i]);
+	// };
