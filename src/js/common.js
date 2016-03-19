@@ -17,7 +17,16 @@
 		$('input').val(plus);
 	});
 
-
+/*
+	var i = -1;
+	setTimeout(function f(){
+		console.log("Worked! " + dwq());
+		function dwq(){
+			return i += 1;
+		}
+		setTimeout(f, 2000);// f != this   this не поможет
+	}, 1000)
+*/
 	// FUNCTION DECLARATION
 
 	/*	function chears(name) {//name - это Аргумент
@@ -58,6 +67,12 @@
 	// поскольку anotherZamikanie - это просто переменная
 	*/
 
+	// ***************************
+	// конструкторы и прототипы
+	//
+	//
+	//
+
 	// Function.prototype.bind = function(context) {
 	//    return function() {
 	//       return this.apply(context, arguments);
@@ -71,8 +86,6 @@
 		console.log(f(3)); // 6
 	*/
 
-	// ***************************
-	// конструкторы и прототипы
 
 	/*
 	var Person, person, anotherPerson, AnotherPerson;
@@ -133,7 +146,7 @@
 	//  OBJECT
 	//
 	//
-
+/*
 	var pers = {
 		name : "Vasja",
 		age : 40,
@@ -149,7 +162,7 @@
 			// и выведем в АЛЕРТ
 			alert(pers[key] *=2);
 		}
-	}
+	}*/
 
 	//
 	//
