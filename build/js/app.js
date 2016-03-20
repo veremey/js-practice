@@ -1,6 +1,6 @@
 //include lib/jquery.js
 //include lib/slick.min.js
-$(document).ready(function($) {
+$(document).ready(function() {
 	var plus = (function() {
 		var count = 0;
 		return function() {
@@ -20,7 +20,21 @@ $(document).ready(function($) {
 	});
 });
 
+	function isEmpty(obj) {
+   for ( key in obj){
+   	return false;
+   }
+   return true;
+ 	}
 
+	var schedule["2000"] = "Vads";
+	// alert(schedule.length);
+
+	alert( isEmpty(schedule) ); // true
+
+	schedule["8:30"] = "подъём";
+
+	alert( isEmpty(schedule) ); // false
 
 /*
 	var i = -1;
