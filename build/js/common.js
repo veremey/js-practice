@@ -1,21 +1,24 @@
-
-
-	var plus = (function (){
+$(document).ready(function($) {
+	var plus = (function() {
 		var count = 0;
-		return function(){
+		return function() {
 			var num = $('input').val();
-			var count = num !==undefined ? num : count;
-			// var count = num // практически одно и тоже
+			var count = num !== undefined ? num : count;
+			//var count = num // практически одно и тоже
 			return ++count;
 		}
-	})();
-// ^
-//скобки в конце для того, чтобы ВЫЗВАТЬ функцию сразу после того, как она инициализированна.
-//получить значение пересенной и что-то дальше с ней делать
-// https://gist.github.com/roman01la/bee756ac395b809d6636
-	$('button').on('click', function(){
+	}());
+
+	// ^
+	//скобки в конце для того, чтобы ВЫЗВАТЬ функцию сразу после того, как она инициализированна.
+	//получить значение пересенной и что-то дальше с ней делать
+	// https://gist.github.com/roman01la/bee756ac395b809d6636
+	$('button').on('click', function() {
 		$('input').val(plus);
 	});
+});
+
+
 
 /*
 	var i = -1;
@@ -146,23 +149,25 @@
 	//  OBJECT
 	//
 	//
-/*
-	var pers = {
+
+	/*var pers = {
 		name : "Vasja",
 		age : 40,
-		phone : 6566
+		phone : 65
 	}
 	for ( key in pers){
 		console.log(key);
-	} // Вернет ключи обьекта
+	} // Вернет ключи обьекта в консоль
 
 	for (key in pers){
 			//если ключи число то умножим его на 2
-		if (parseFloat(pers[key]) ? !NaN : NaN ) {
+		if (parseFloat(pers[key]) ? !NaN: NaN) {
 			// и выведем в АЛЕРТ
 			alert(pers[key] *=2);
 		}
-	}*/
+	}
+	*/
+
 
 	//
 	//
