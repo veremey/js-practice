@@ -20,21 +20,15 @@ $(document).ready(function() {
 	});
 });
 
-	function isEmpty(obj) {
-   for ( key in obj){
-   	return false;
-   }
-   return true;
- 	}
+	//
+	// УСЛОВНЫЕ ОПЕРАТОРЫ
+	//
 
-	var schedule["2000"] = "Vads";
-	// alert(schedule.length);
+	// выражение ? выражение1 : выражение2
+	// var x= 15;
+	// var text = x > 10 ? "X > 10" : "X < 10"
+	//            если true то возвращается "X > 10" иначе "X < 10"
 
-	alert( isEmpty(schedule) ); // true
-
-	schedule["8:30"] = "подъём";
-
-	alert( isEmpty(schedule) ); // false
 
 /*
 	var i = -1;
@@ -183,6 +177,23 @@ $(document).ready(function() {
 		}
 	}
 	*/
+	/*
+	// У кого больше зарплата
+	var salaries = {
+  "Вася": 100,
+  "Петя": 300,
+  "Алина": 600,
+  "Даша": 250
+};
+	var max = 1;
+	var less = 0;
+	for (var key in salaries){
+		if (max < salaries[key]) {
+			max = salaries[key];
+			less = key;
+		};
+	}
+	console.log(less || "Нету такого сотрудника");*/
 
 
 	//
@@ -198,3 +209,9 @@ $(document).ready(function() {
 	// for (var i = arr.length - 1; i >= 0; i--) {
 	// 	alert(arr[i]);
 	// };
+
+	//Вывести рандомное значение масива
+	var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+	var rand = 0 + Math.floor(Math.random() * (+(arr.length -1) + 1 - 0));
+	console.log( arr[rand] );
+
