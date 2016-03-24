@@ -202,6 +202,27 @@ $(document).ready(function() {
 	//
 	//
 
+	//СКОПРОВАТЬ МАСИВ МОЖНО ТАК:
+	/*
+		var arr = [];
+		for (var i = 0; i < arr.length; i++)
+		{arr2[i] = arr[i];}
+		--
+		arr2[i] == arr[i] // true
+	*/
+
+	/*
+	// ф-ция которая ищет в массиве arr значение value и возвращает его номер
+
+	arr = ["test", 2, 1.5, false];
+	function find (arr, value){
+		for (var i = arr.length - 1; i>=0; i--){ //перебераем масив
+			if(arr[i] == value){ // если на позиции есть значение
+				console.log(i); // возвращаем позицию
+			}
+		}
+	}
+	*/
 
 	// var arr = [1, 2, 3, 4, 5];
 
@@ -211,7 +232,24 @@ $(document).ready(function() {
 	// };
 
 	//Вывести рандомное значение масива
-	var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+	/*var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
 	var rand = 0 + Math.floor(Math.random() * (+(arr.length -1) + 1 - 0));
 	console.log( arr[rand] );
+*/
 
+	//
+	//калькулятор для введённых значений
+	//
+
+	/*number = [];
+	while(true){
+		var values = prompt('Введите число', "0");
+		if (values === '' || values == null || isNaN(values)) break;
+		number.push(+values);
+	}
+
+	var sum = 0;
+	for (var i = 0; i < number.length; i++){
+		sum += number[i];
+	}
+	alert('Сумма всех введенных чисел равна ' + sum+ "!");*/
