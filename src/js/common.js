@@ -64,6 +64,8 @@ $(document).ready(function() {
 	});
 	console.log('-------');
 
+
+
 	var zamikanie = function(){
 		var m = 10;
 		return function(){//оборачиваем в функцию, чтобы значение  переменной "m" сохранилось и к нему можно было вернуться
@@ -77,6 +79,17 @@ $(document).ready(function() {
 	anotherZamikanie();// вызываю ф-циюсщ
 	// поскольку anotherZamikanie - это просто переменная
 	*/
+
+
+	/*// перебор параметров в ф-ции
+
+	function sayHi(){
+		for(var i = 0; i < arguments.length; i++){
+			alert('Привет ' + arguments[i]);
+		}
+	}
+
+	sayHi('Введите', 'Serekjkj');*/
 
 	// ***************************
 	// конструкторы и прототипы
@@ -253,9 +266,3 @@ $(document).ready(function() {
 	alert('Сумма всех введенных чисел равна ' + sum+ "!");*/
 
 
-
-function sayHi(){
-	alert('Привет ' + arguments[arguments.length]);
-}
-
-sayHi('Введите', 'Serekjkj')
