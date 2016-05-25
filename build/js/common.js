@@ -39,17 +39,8 @@ $(document).ready(function() {
 	r.minus();
 	r.minus();
 
-	// var t = hi();
-	// var p = hi();
-
-	// t();//1
-	// t();//2
-	// t();//3
-	// p();//1
-
 
 /*	function hi() {
-		// coun = a+9;
 		var coun = 0;
 		return function(){
 			coun++;
