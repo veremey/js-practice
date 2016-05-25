@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 });
 
-
+/*
 	function Hi() {
 		// coun = a+9;
 		var coun = 0;
@@ -34,11 +34,12 @@ $(document).ready(function() {
 
 	var r = new Hi(); //< Hi декоратор поэтому с Большой
 
+	// r.plus().plus().plus(); Не работает!!
 	r.plus();
 	r.plus();
 	r.minus();
 	r.minus();
-
+*/
 
 /*	function hi() {
 		var coun = 0;
@@ -56,8 +57,8 @@ $(document).ready(function() {
 	t();//3
 	p();//1*/
 
-	/*
-		var coun = 0;
+
+/*		var coun = 0;
 	hi = {
 		plus : function(){
 			console.log(coun++);
@@ -69,10 +70,12 @@ $(document).ready(function() {
 
 	hi.plus();
 	hi.plus();
-	// hi.plus();
-	hi.minus().plus(); <- тоже работает
+	hi.plus();
+	hi.plus();
+	//hi.minus().plus().plus().plus(); //<- НЕ работает
 	hi.minus();
-	*/
+	hi.minus();*/
+
 //
 
 	//
