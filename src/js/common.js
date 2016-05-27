@@ -74,9 +74,68 @@ $(document).ready(function() {
 	hi.plus();
 	//hi.minus().plus().plus().plus(); //<- НЕ работает
 	hi.minus();
-	hi.minus();*/
+	hi.minus();
+`*/
 
-//
+
+/*
+	var coun = 0;
+	hi = {
+		plus : function(){
+			console.log(coun++);
+			return this; //hi.minus().plus().plus().plus();
+		},
+		minus : function() {
+			console.log(--coun);
+			return this; //hi.minus().plus().plus().plus();
+		}
+	};
+
+	hi.plus();
+	hi.plus();
+
+	hi.plus().plus().plus().minus(); //<- РАБОТАЕТ
+
+*/
+
+// геттеры и сеттеры
+
+function User() {
+	var FirstName, Surname;
+
+	this.FullName = function(){
+		return FirstName +" "+ Surname ;
+	}
+
+	this.getFirstName = function(Name){
+		if(!arguments.length) {
+			return console.log(this.FirstName);
+		}
+	};
+	this.setFirstName = function(Name){
+		FirstName = Name;
+		return console.log(FirstName);
+	};
+
+	this.getSurname = function(surname){
+		if(!arguments.lenth){
+			return console.log( this.Surname );
+		}
+	};
+	this.setSurname = function(surname){
+		Surname = surname;
+		return console.log(Surname);
+	};
+};
+
+var user = new User();
+
+user.setFirstName("Петя");
+user.setSurname("Иванов");
+
+alert( user.FullName() );
+
+
 
 	//
 	// УСЛОВНЫЕ ОПЕРАТОРЫ
